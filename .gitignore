@@ -1,0 +1,16 @@
+# ToolSphere - Git ignore
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+node_modules/
+.env
+.env.local
+.vscode/
+.idea/
+*.swp
+*~
+dist/
+build/
+# Keep the actual site clean for static deploy
+# Do not ignore assets or index.html

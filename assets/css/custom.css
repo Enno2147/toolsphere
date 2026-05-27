@@ -1,0 +1,145 @@
+/* ToolSphere - Custom Styles (beyond Tailwind CDN) */
+
+:root {
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+  --success: #22c55e;
+  --warning: #eab308;
+}
+
+body {
+  font-family: 'Inter', system_ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+  font-feature-settings: "ss02";
+  letter-spacing: -0.02em;
+}
+
+/* Smooth card hover (Linear style) */
+.tool-card {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s ease;
+  border: 1px solid #252a33;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border-color: #6366f1;
+}
+
+.tool-card .fa-heart {
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.tool-card .fa-heart:hover {
+  transform: scale(1.2);
+}
+
+/* Beautiful Modal (Raycast-inspired) */
+.tool-modal {
+  animation: modalEnter 0.22s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* AdSense placeholder styling (professional but clearly marked) */
+.adsense-slot {
+  background: repeating-linear-gradient(
+    135deg,
+    #1a1d24,
+    #1a1d24 8px,
+    #252a33 8px,
+    #252a33 16px
+  );
+  border: 1px dashed #334155;
+  position: relative;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.adsense-slot::before {
+  content: "Werbung / AdSense";
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: #1e2937;
+  padding: 1px 8px;
+  border-radius: 9999px;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+/* Pro badge / button */
+.pro-badge {
+  background: linear-gradient(90deg, #eab308, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Strength meter for password */
+.strength-bar {
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Canvas containers */
+canvas {
+  image-rendering: crisp-edges;
+}
+
+/* Blog article reader */
+.prose {
+  font-size: 15.5px;
+  line-height: 1.72;
+}
+
+.prose h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.01em;
+  margin-top: 2em;
+}
+
+/* Search highlight */
+.search-highlight {
+  background: rgba(99, 102, 241, 0.2);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Mobile bottom nav shadow */
+@media (max-width: 768px) {
+  .mobile-nav {
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Very subtle grid pattern for hero */
+.hero-grid {
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+/* Copy button success state */
+.copied {
+  color: #22c55e !important;
+}
