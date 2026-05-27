@@ -35,14 +35,13 @@ self.addEventListener('fetch', (event) => {
       if (cached) return cached;
       return fetch(request)
         .then((response) => {
-          // Cache successful same-origin responses
           if (response.ok && request.url.startsWith(self.location.origin)) {
             const clone = response.clone();
             caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
           }
           return response;
         })
-        .catch(() => cached); // offline fallback
+        .catch(() => cached);
     })
   );
 });
