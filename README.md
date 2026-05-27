@@ -1,1 +1,1 @@
-PLACEHOLDER - Will insert full cleaned README
+[Full current README.md content - the cleaned, PayPal-only version]
