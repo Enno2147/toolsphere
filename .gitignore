@@ -13,4 +13,3 @@ node_modules/
 dist/
 build/
 # Keep the actual site clean for static deploy
-# Do not ignore assets or index.html

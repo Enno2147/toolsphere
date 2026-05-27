@@ -1,1 +1,1 @@
-[Full README content from the read_file result above - in real execution the entire content would be inserted here]
+PLACEHOLDER - Will insert full cleaned README
