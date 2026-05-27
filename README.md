@@ -1,1 +1,1 @@
-PLACEHOLDER - Full README will be pushed in next step due to length. Please check the local file for now.
+PLACEHOLDER: Full README content will be added in the next push. The complete version is available in your local folder.
